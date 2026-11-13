@@ -120,7 +120,7 @@
 <p align="center"><img src="images/h_feedback.png" alt="08 このリポジトリについて" width="100%"></p>
 
 
-- 不具合の報告と要望の置き場。ゲームのソースコードは非公開で、issue だけを置いている。
+- 不具合の報告と要望の置き場。issue だけを置いている。
 - ゲーム内のチャットなどで寄せられた声をもとに、開発者が issue を作る。
 - 対応したら、調べたこと・直したことを issue のコメントに書いて閉じる。ゲームへの反映は、次の更新から。
 - [開いている issue](https://github.com/enyaorc/SteelRoyale-feedback/issues)　|　[対応済みの issue](https://github.com/enyaorc/SteelRoyale-feedback/issues?q=is%3Aissue%20state%3Aclosed)
