@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>大乱闘ロボット対戦 - STEEL ROYALE -</title>
+<meta name="description" content="26 体のロボットが入り乱れる、見下ろし型の 3D 対戦アクション。ブラウザ（unityroom）ですぐに遊べます。">
+<meta property="og:title" content="大乱闘ロボット対戦 - STEEL ROYALE -">
+<meta property="og:description" content="撃って、かわして、ぶっ放せ。26 体のロボットが入り乱れる、見下ろし型の 3D 対戦アクション。">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://enyaorc.github.io/SteelRoyale-feedback/assets/img/og.jpg">
+<meta property="og:url" content="https://enyaorc.github.io/SteelRoyale-feedback/">
+<link rel="icon" href="assets/img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#070d18">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<nav class="top">
+<a class="brand" href="#top">STEEL ROYALE</a>
+<div class="links">
+<a href="#modes">モード</a><a href="#maps">マップ</a><a href="#mechs">機体</a><a href="#howto">遊び方</a><a href="#progress">集めて育てる</a><a href="#story">ストーリー</a><a href="#feedback">不具合・要望</a>
+</div>
+<a class="cta small" href="https://unityroom.com/games/steelroyale">遊ぶ</a>
+</nav>
+
+<section class="hero" id="top">
+<div class="hero-art" aria-hidden="true"></div>
+<div class="hero-in">
+<h1><img src="assets/img/logo.png" alt="大乱闘ロボット対戦 - STEEL ROYALE -" width="627" height="337"></h1>
+<p class="catch">撃って、かわして、ぶっ放せ。</p>
+<p class="lead">26&nbsp;体のロボットが入り乱れる、見下ろし型の&nbsp;3D&nbsp;対戦アクション。<br>ブラウザを開けば、インストールなしですぐに出撃。</p>
+<a class="cta" href="https://unityroom.com/games/steelroyale"><span class="tri"></span><span><b>unityroom で遊ぶ</b><small>無料・インストール不要</small></span></a>
+<div class="badges">
+<a href="https://unityroom.com/games/steelroyale"><img src="https://img.shields.io/badge/unityroom-%E5%85%AC%E9%96%8B%E4%B8%AD-2ea44f?style=flat-square&logo=unity&logoColor=white" alt="unityroom 公開中" height="22"></a>
+<img src="https://img.shields.io/badge/Steam-%E6%BA%96%E5%82%99%E4%B8%AD-d97706?style=flat-square&logo=steam&logoColor=white" alt="Steam 準備中" height="22">
+<img src="https://img.shields.io/badge/Android-%E6%BA%96%E5%82%99%E4%B8%AD-d97706?style=flat-square&logo=android&logoColor=white" alt="Android 準備中" height="22">
+<img src="https://img.shields.io/badge/iOS-%E6%BA%96%E5%82%99%E4%B8%AD-d97706?style=flat-square&logo=apple&logoColor=white" alt="iOS 準備中" height="22">
+</div>
+<p class="note">※ 画像・仕様は開発中のものです。実際の製品とは異なる場合があります。</p>
+</div>
+</section>
+
+<main>
+<div class="wrap">
+
+<header class="sec-head" id="about"><span class="no">01</span><span class="ttl"><b>ゲーム紹介</b><i>ABOUT</i></span></header>
+<p class="intro">通常攻撃・3&nbsp;つのスキル・ULT（ウルト）。機体ごとにまったく違う技で戦う、見下ろし型の&nbsp;3D&nbsp;対戦アクション。<br>コインを奪い合う大乱闘、拠点を取り合うチーム戦、全員で挑むレイドまで。</p>
+<div class="feats">
+<div class="feat"><b>26&nbsp;機体・6&nbsp;ロール</b><p>アサルト／タンク／アサシン／ファイター／シューター／サポート。お気に入りの&nbsp;1&nbsp;機を見つけよう。</p></div>
+<div class="feat"><b>6&nbsp;つのマップ</b><p>シングルは市街地・砂漠・溶鉱炉。マルチプレイでは、トイボックス・カジノパーティー・スノーホリデーが順番に回ってくる。</p></div>
+<div class="feat"><b>最大&nbsp;16&nbsp;機のマルチプレイ</b><p>人とボットを合わせて&nbsp;16&nbsp;機の大乱戦。チャットで話しながら遊べる。</p></div>
+<div class="feat"><b>課金なし</b><p>ガチャもスキンも、遊んで集めたコインと素材だけ。</p></div>
+</div>
+
+<header class="sec-head" id="modes"><span class="no">02</span><span class="ttl"><b>モード</b><i>GAME MODES</i></span></header>
+<div class="grid g2">
+<article class="card">
+<button class="shot" data-full="assets/img/mode_coin.jpg" aria-label="コインラッシュの画像を拡大"><img src="assets/img/mode_coin.jpg" alt="コインラッシュ" loading="lazy" width="1280" height="720"></button>
+<div class="band"><b>コインラッシュ</b><span class="tag t-single">シングル</span><span class="tag t-multi">マルチ</span></div>
+<p>マップのコインを拾い、敵を倒して奪い取れ。倒された機体は、持っていたコインの半分をばらまく。集めたコインが増えると、セットしておいた「コイン報酬」（ガトリングや巨大バズーカなど）が使えるようになる。</p>
+</article>
+<article class="card">
+<button class="shot" data-full="assets/img/mode_team.jpg" aria-label="チーム制圧の画像を拡大"><img src="assets/img/mode_team.jpg" alt="チーム制圧" loading="lazy" width="1280" height="720"></button>
+<div class="band"><b>チーム制圧</b><span class="tag t-single">シングル</span></div>
+<p>青と赤に分かれて、5&nbsp;つの拠点を奪い合う。決め手は撃破より陣取り。仲間と前線を押し上げて、先に目標点へ。</p>
+</article>
+<article class="card">
+<button class="shot" data-full="assets/img/mode_multi.jpg" aria-label="マルチプレイの画像を拡大"><img src="assets/img/mode_multi.jpg" alt="マルチプレイ" loading="lazy" width="1280" height="720"></button>
+<div class="band"><b>マルチプレイ</b><span class="tag t-multi">マルチ</span></div>
+<p>ほかのプレイヤーとコインラッシュ。1&nbsp;部屋は&nbsp;16&nbsp;機で、30&nbsp;分ごとに次のマップへ。チャットの発言は、機体の上にフキダシで出る。</p>
+</article>
+<article class="card">
+<button class="shot" data-full="assets/img/mode_raid.jpg" aria-label="レイドバトルの画像を拡大"><img src="assets/img/mode_raid.jpg" alt="レイドバトル" loading="lazy" width="1280" height="720"></button>
+<div class="band"><b>レイドバトル</b><span class="tag t-multi">マルチ</span></div>
+<p>トイボックスで汽車を壊すと……空から巨大汽車ロボが降ってくる！ その間だけは全員が味方。力を合わせて倒し、ダメージ&nbsp;1&nbsp;位を狙え。</p>
+</article>
+</div>
+<article class="card wide">
+<button class="shot" data-full="assets/img/mode_br.jpg" aria-label="バトルロイヤルの画像を拡大"><img src="assets/img/mode_br.jpg" alt="バトルロイヤル" loading="lazy" width="1280" height="720"></button>
+<div class="body"><div class="band"><b>バトルロイヤル</b><span class="tag t-single">シングル</span><span class="tag t-store">Steam・Android・iOS</span></div>
+<p>全員が敵のソロ戦。倒されたら復活はなし、最後まで生き残った&nbsp;1&nbsp;機が勝者。時間とともに安全地帯（青い壁）が縮み、外にいるとダメージを受け続ける。</p>
+<p class="sub">Steam 版・Android 版・iOS 版（準備中）で遊べるモード。unityroom 版にはない。</p></div>
+</article>
+
+<header class="sec-head" id="maps"><span class="no">03</span><span class="ttl"><b>マップ</b><i>MAPS</i></span></header>
+<div class="grid g3">
+<article class="card">
+<button class="shot" data-full="assets/img/map_city.jpg" aria-label="市街地の画像を拡大"><img src="assets/img/map_city.jpg" alt="市街地" loading="lazy" width="1280" height="720"></button>
+<div class="band"><b>市街地</b><span class="tag t-single">シングル</span></div>
+<p>ビルと交差点が並ぶ、王道の市街戦。</p>
+</article>
+<article class="card">
+<button class="shot" data-full="assets/img/map_desert.jpg" aria-label="砂漠の画像を拡大"><img src="assets/img/map_desert.jpg" alt="砂漠" loading="lazy" width="1280" height="720"></button>
+<div class="band"><b>砂漠</b><span class="tag t-single">シングル</span></div>
+<p>重機と廃材が転がる、乾いたスクラップ採掘場。</p>
+</article>
+<article class="card">
+<button class="shot" data-full="assets/img/map_foundry.jpg" aria-label="溶鉱炉の画像を拡大"><img src="assets/img/map_foundry.jpg" alt="溶鉱炉" loading="lazy" width="1280" height="720"></button>
+<div class="band"><b>溶鉱炉</b><span class="tag t-single">シングル</span></div>
+<p>溶岩が流れる灼熱の廃工場。足もとに注意。</p>
+</article>
+<article class="card">
+<button class="shot" data-full="assets/img/map_toybox.jpg" aria-label="トイボックスの画像を拡大"><img src="assets/img/map_toybox.jpg" alt="トイボックス" loading="lazy" width="1280" height="720"></button>
+<div class="band"><b>トイボックス</b><span class="tag t-multi">マルチ</span></div>
+<p>おもちゃ箱の中で戦うステージ。線路を走る汽車にひかれると、大きく吹き飛ばされてコインをばらまく。その汽車を壊すと……？</p>
+</article>
+<article class="card">
+<button class="shot" data-full="assets/img/map_casino.jpg" aria-label="カジノパーティーの画像を拡大"><img src="assets/img/map_casino.jpg" alt="カジノパーティー" loading="lazy" width="1280" height="720"></button>
+<div class="band"><b>カジノパーティー</b><span class="tag t-multi">マルチ</span></div>
+<p>ピンボール台のようなカジノ。ポヨンバンパーで弾き飛ばされ、大砲フリッパーで中央へひとっ飛び。ジャックポットスロットに攻撃を当てて回そう。何が出るかな？</p>
+</article>
+<article class="card">
+<button class="shot" data-full="assets/img/map_xmas.jpg" aria-label="スノーホリデーの画像を拡大"><img src="assets/img/map_xmas.jpg" alt="スノーホリデー" loading="lazy" width="1280" height="720"></button>
+<div class="band"><b>スノーホリデー</b><span class="tag t-multi">マルチ</span></div>
+<p>雪の積もった村。サンタさんからのプレゼントを集めよう。巨大な雪玉に気をつけて。</p>
+</article>
+</div>
+<p class="after">マルチプレイの&nbsp;3&nbsp;つのマップには、一息つける休憩所もある。</p>
+
+<header class="sec-head" id="mechs"><span class="no">04</span><span class="ttl"><b>機体</b><i>MECHS</i></span></header>
+<p class="intro">最初はノーマルの&nbsp;5&nbsp;機から。ほかの機体は、カプセルガチャで手に入る。<span class="hint">カードを押すと、その機体の紹介が出る。</span></p>
+<div class="legend" aria-label="枠の色はレアリティ"><span class="lg legendary">レジェンダリー</span><span class="lg epic">エピック</span><span class="lg rare">レア</span><span class="lg normal">ノーマル</span></div>
+<div class="chips" role="group" aria-label="ロールで絞り込む"><button class="chip on" data-role="">すべて</button><button class="chip" data-role="アサルト">アサルト</button><button class="chip" data-role="タンク">タンク</button><button class="chip" data-role="アサシン">アサシン</button><button class="chip" data-role="ファイター">ファイター</button><button class="chip" data-role="シューター">シューター</button><button class="chip" data-role="サポート">サポート</button></div>
+<div class="roster">
+<button class="mech r-legendary" data-role="アサルト" aria-label="マグネター">
+<img src="assets/img/mechs/magnetar.png" alt="" loading="lazy" width="256" height="256">
+<b>マグネター</b><span class="role">アサルト</span>
+<span class="desc"><b>マグネター</b><em>アサルト・レジェンダリー</em>磁力を操る特殊機。極性付与で敵同士を激突させ、磁気シールドで敵弾を逸らす。</span>
+</button>
+<button class="mech r-legendary" data-role="アサシン" aria-label="セイバー">
+<img src="assets/img/mechs/saber.png" alt="" loading="lazy" width="256" height="256">
+<b>セイバー</b><span class="role">アサシン</span>
+<span class="desc"><b>セイバー</b><em>アサシン・レジェンダリー</em>剣を自在に操る伝説の忍ロボット。</span>
+</button>
+<button class="mech r-legendary" data-role="ファイター" aria-label="ストライカー">
+<img src="assets/img/mechs/striker.png" alt="" loading="lazy" width="256" height="256">
+<b>ストライカー</b><span class="role">ファイター</span>
+<span class="desc"><b>ストライカー</b><em>ファイター・レジェンダリー</em>油圧ピストンナックルで敵陣へ切り込み、瞬撃コンボとメガトンパンチで粉砕する超近接格闘機。</span>
+</button>
+<button class="mech r-epic" data-role="タンク" aria-label="イージス">
+<img src="assets/img/mechs/aegis.png" alt="" loading="lazy" width="256" height="256">
+<b>イージス</b><span class="role">タンク</span>
+<span class="desc"><b>イージス</b><em>タンク・エピック</em>大盾と長槍の聖騎士。正面の攻撃を受け止め、ドームで味方を守る。</span>
+</button>
+<button class="mech r-epic" data-role="タンク" aria-label="ソニック">
+<img src="assets/img/mechs/sonic.png" alt="" loading="lazy" width="256" height="256">
+<b>ソニック</b><span class="role">タンク</span>
+<span class="desc"><b>ソニック</b><em>タンク・エピック</em>全身スピーカーの重装機。衝撃波で敵をまとめて押し返し、戦線を支える。</span>
+</button>
+<button class="mech r-epic" data-role="アサシン" aria-label="リーパー">
+<img src="assets/img/mechs/reaper.png" alt="" loading="lazy" width="256" height="256">
+<b>リーパー</b><span class="role">アサシン</span>
+<span class="desc"><b>リーパー</b><em>アサシン・エピック</em>命を吸う死神。弱った敵へ飛び込んで刈り取り、倒すほど強くなる。</span>
+</button>
+<button class="mech r-epic" data-role="アサシン" aria-label="ミラージュ">
+<img src="assets/img/mechs/mirage.png" alt="" loading="lazy" width="256" height="256">
+<b>ミラージュ</b><span class="role">アサシン</span>
+<span class="desc"><b>ミラージュ</b><em>アサシン・エピック</em>ホログラムの幻影で惑わす奇術師。本物と見分けのつかない分身で敵を翻弄する。</span>
+</button>
+<button class="mech r-epic" data-role="サポート" aria-label="クロノ">
+<img src="assets/img/mechs/chrono.png" alt="" loading="lazy" width="256" height="256">
+<b>クロノ</b><span class="role">サポート</span>
+<span class="desc"><b>クロノ</b><em>サポート・エピック</em>時を操る時計仕掛けの機体。味方を加速させ、倒れる運命すら巻き戻す。</span>
+</button>
+<button class="mech r-epic" data-role="シューター" aria-label="ハンター">
+<img src="assets/img/mechs/hunter.png" alt="" loading="lazy" width="256" height="256">
+<b>ハンター</b><span class="role">シューター</span>
+<span class="desc"><b>ハンター</b><em>シューター・エピック</em>獲物を逃さない追跡者。敵の位置を味方に知らせ、罠と猟犬で追い詰める。</span>
+</button>
+<button class="mech r-epic" data-role="サポート" aria-label="グリッチ">
+<img src="assets/img/mechs/glitch.png" alt="" loading="lazy" width="256" height="256">
+<b>グリッチ</b><span class="role">サポート</span>
+<span class="desc"><b>グリッチ</b><em>サポート・エピック</em>電脳戦のハッカー。敵の弱点をさらし、ウイルスでスキルを使いづらくする。</span>
+</button>
+<button class="mech r-epic" data-role="サポート" aria-label="セラフ">
+<img src="assets/img/mechs/seraph.png" alt="" loading="lazy" width="256" height="256">
+<b>セラフ</b><span class="role">サポート</span>
+<span class="desc"><b>セラフ</b><em>サポート・エピック</em>光の翼を持つ天使。羽根で戦いながら味方を癒やし、空から駆けつける。</span>
+</button>
+<button class="mech r-epic" data-role="サポート" aria-label="パルス">
+<img src="assets/img/mechs/pulse.png" alt="" loading="lazy" width="256" height="256">
+<b>パルス</b><span class="role">サポート</span>
+<span class="desc"><b>パルス</b><em>サポート・エピック</em>戦場の救急隊。ビームで敵を焼きつつ味方を治療し、倒れた仲間を呼び戻す。</span>
+</button>
+<button class="mech r-epic" data-role="サポート" aria-label="ガイア">
+<img src="assets/img/mechs/gaia.png" alt="" loading="lazy" width="256" height="256">
+<b>ガイア</b><span class="role">サポート</span>
+<span class="desc"><b>ガイア</b><em>サポート・エピック</em>大地の力を宿す生体機。種と大樹で味方を癒やし、根と胞子で敵を足止めする。</span>
+</button>
+<button class="mech r-rare" data-role="ファイター" aria-label="インフェルノ">
+<img src="assets/img/mechs/inferno.png" alt="" loading="lazy" width="256" height="256">
+<b>インフェルノ</b><span class="role">ファイター</span>
+<span class="desc"><b>インフェルノ</b><em>ファイター・レア</em>火炎放射と焼夷兵器で一帯を焼き尽くす。近距離の制圧力は随一。</span>
+</button>
+<button class="mech r-rare" data-role="アサルト" aria-label="ボルト">
+<img src="assets/img/mechs/volt.png" alt="" loading="lazy" width="256" height="256">
+<b>ボルト</b><span class="role">アサルト</span>
+<span class="desc"><b>ボルト</b><em>アサルト・レア</em>連鎖する雷撃で複数の敵をまとめて焼く電撃機。コイルと磁力で戦場を支配する。</span>
+</button>
+<button class="mech r-rare" data-role="ファイター" aria-label="グレイシャー">
+<img src="assets/img/mechs/glacier.png" alt="" loading="lazy" width="256" height="256">
+<b>グレイシャー</b><span class="role">ファイター</span>
+<span class="desc"><b>グレイシャー</b><em>ファイター・レア</em>冷気の放射で敵を鈍らせ、最後は凍りつかせる制圧機。氷の円陣で敵を閉じ込める。</span>
+</button>
+<button class="mech r-rare" data-role="アサルト" aria-label="グラビトン">
+<img src="assets/img/mechs/graviton.png" alt="" loading="lazy" width="256" height="256">
+<b>グラビトン</b><span class="role">アサルト</span>
+<span class="desc"><b>グラビトン</b><em>アサルト・レア</em>重力を操る重装機。敵を引き寄せ、弾き飛ばし、まとめて押し潰す。</span>
+</button>
+<button class="mech r-rare" data-role="アサシン" aria-label="ローニン">
+<img src="assets/img/mechs/ronin.png" alt="" loading="lazy" width="256" height="256">
+<b>ローニン</b><span class="role">アサシン</span>
+<span class="desc"><b>ローニン</b><em>アサシン・レア</em>瞬間移動と見切りで翻弄する高速機。呪印を刻んだ敵ほど、自分の攻撃がよく効く。</span>
+</button>
+<button class="mech r-rare" data-role="シューター" aria-label="ハヴォック">
+<img src="assets/img/mechs/havoc.png" alt="" loading="lazy" width="256" height="256">
+<b>ハヴォック</b><span class="role">シューター</span>
+<span class="desc"><b>ハヴォック</b><em>シューター・レア</em>迫撃砲で壁越しに爆撃する破壊工作機。あらゆる爆薬で戦場を更地にする。</span>
+</button>
+<button class="mech r-rare" data-role="タンク" aria-label="アンカー">
+<img src="assets/img/mechs/anchor.png" alt="" loading="lazy" width="256" height="256">
+<b>アンカー</b><span class="role">タンク</span>
+<span class="desc"><b>アンカー</b><em>タンク・レア</em>重装甲の潜水型重機。巨大な錨で敵を引き寄せ、鉄壁の大盾と衝撃波で戦線を強引に押し上げる。</span>
+</button>
+<button class="mech r-rare" data-role="タンク" aria-label="ジェイラー">
+<img src="assets/img/mechs/jailer.png" alt="" loading="lazy" width="256" height="256">
+<b>ジェイラー</b><span class="role">タンク</span>
+<span class="desc"><b>ジェイラー</b><em>タンク・レア</em>鎖と大盾で敵を捕らえる看守ロボット。攻撃を当て続けた敵を拘束する。</span>
+</button>
+<button class="mech r-normal" data-role="アサルト" aria-label="ヴァンガード">
+<img src="assets/img/mechs/vanguard.png" alt="" loading="lazy" width="256" height="256">
+<b>ヴァンガード</b><span class="role">アサルト</span>
+<span class="desc"><b>ヴァンガード</b><em>アサルト・ノーマル</em>攻守のバランスに優れた汎用機。ミサイルとシールドで中距離戦を制する。</span>
+</button>
+<button class="mech r-normal" data-role="タンク" aria-label="タイタン">
+<img src="assets/img/mechs/titan.png" alt="" loading="lazy" width="256" height="256">
+<b>タイタン</b><span class="role">タンク</span>
+<span class="desc"><b>タイタン</b><em>タンク・ノーマル</em>圧倒的な装甲と弾幕を誇る重装機。遅いが倒れない。</span>
+</button>
+<button class="mech r-normal" data-role="シューター" aria-label="ファントム">
+<img src="assets/img/mechs/phantom.png" alt="" loading="lazy" width="256" height="256">
+<b>ファントム</b><span class="role">シューター</span>
+<span class="desc"><b>ファントム</b><em>シューター・ノーマル</em>長射程レールガンと光学迷彩を備えた狙撃機。装甲は薄い。</span>
+</button>
+<button class="mech r-normal" data-role="ファイター" aria-label="レイザー">
+<img src="assets/img/mechs/razor.png" alt="" loading="lazy" width="256" height="256">
+<b>レイザー</b><span class="role">ファイター</span>
+<span class="desc"><b>レイザー</b><em>ファイター・ノーマル</em>プラズマブレードで切り込む近接特化機。高速で敵に食らいつく。</span>
+</button>
+<button class="mech r-normal" data-role="サポート" aria-label="ウォーデン">
+<img src="assets/img/mechs/warden.png" alt="" loading="lazy" width="256" height="256">
+<b>ウォーデン</b><span class="role">サポート</span>
+<span class="desc"><b>ウォーデン</b><em>サポート・ノーマル</em>タレットとドローンを操る技術機。回復とEMPで戦線を支える。</span>
+</button>
+</div>
+
+<header class="sec-head" id="howto"><span class="no">05</span><span class="ttl"><b>遊び方</b><i>HOW TO PLAY</i></span></header>
+<div class="grid g3 howto">
+<div class="feat"><b>PC</b><p><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> で移動、マウスで狙って左クリックで撃つ。<kbd>1</kbd><kbd>2</kbd><kbd>3</kbd> でスキル、<kbd>Q</kbd> で ULT、<kbd>Space</kbd> でブースト。</p></div>
+<div class="feat"><b>スマホ</b><p>左スティックで移動、右スティックで攻撃。スキルは、引いて離せば狙った方向へ。</p></div>
+<div class="feat"><b>コントローラー</b><p>コントローラーにも対応。ボタンの割り当ては設定で変えられる。</p></div>
+</div>
+
+<header class="sec-head" id="progress"><span class="no">06</span><span class="ttl"><b>集めて育てる</b><i>PROGRESSION</i></span></header>
+<div class="grid g2">
+<article class="card">
+<button class="shot" data-full="assets/img/prog_gacha.jpg" aria-label="カプセルガチャの画像を拡大"><img src="assets/img/prog_gacha.jpg" alt="カプセルガチャ" loading="lazy" width="1280" height="720"></button>
+<div class="band"><b>カプセルガチャ</b></div>
+<p>コインで機体とコイン報酬を手に入れる。unityroom 版は&nbsp;10&nbsp;分に&nbsp;1&nbsp;回、無料で引ける。同じ機体が出たら、レベルアップ。</p>
+</article>
+<article class="card">
+<button class="shot" data-full="assets/img/prog_workshop.jpg" aria-label="工房の画像を拡大"><img src="assets/img/prog_workshop.jpg" alt="工房" loading="lazy" width="1280" height="720"></button>
+<div class="band"><b>工房</b></div>
+<p>全機体に&nbsp;4&nbsp;種類のスキン。作った姿は、マルチプレイでほかのプレイヤーにも見える。</p>
+</article>
+<article class="card">
+<button class="shot" data-full="assets/img/prog_gems.jpg" aria-label="ジェムと刻印の画像を拡大"><img src="assets/img/prog_gems.jpg" alt="ジェムと刻印" loading="lazy" width="1280" height="720"></button>
+<div class="band"><b>ジェムと刻印</b></div>
+<p>敵を倒すと手に入るジェムを、通常攻撃・スキル・ULT にはめて強化。刻印で、ジェムをその機体・その技だけの専用品に生まれ変わらせる。付く追加効果はランダム。狙うは、レジェンダリーのジェムにレジェンダリーの刻印。ジェムと刻印を組み合わせて、最強のカスタマイズを目指せ。</p>
+</article>
+<article class="card">
+<button class="shot" data-full="assets/img/prog_hangar.jpg" aria-label="出撃準備の画像を拡大"><img src="assets/img/prog_hangar.jpg" alt="出撃準備" loading="lazy" width="1280" height="720"></button>
+<div class="band"><b>出撃準備</b></div>
+<p>機体を選び、コイン報酬をセットして出撃。1&nbsp;日&nbsp;1&nbsp;回のログインボーナスもある。持ち帰ったコインと撃破数は、unityroom のランキングへ。</p>
+</article>
+</div>
+
+<header class="sec-head" id="story"><span class="no">07</span><span class="ttl"><b>ストーリー</b><i>STORY</i></span></header>
+<div class="story">
+<p class="intro"><span class="tag t-store">Steam・Android・iOS（準備中）</span><br>
+新米パイロットとして、ランク F から頂点のランク S、そして「王者」を目指す、ひとり用のストーリーモード。<br>
+相棒はオペレーターのミナ。行く手には、各ランクに&nbsp;1&nbsp;人ずつ、合わせて&nbsp;7&nbsp;人のライバルが待ち構える。<br>
+ミッションをこなして昇格試合に挑み、勝てばライバルの機体が自分のものに。全ランクを制覇したら、ライバル連戦で最速記録に挑戦だ。</p>
+<div class="grid g2">
+<article class="card">
+<button class="shot" data-full="assets/img/story_select.jpg" aria-label="ミッション選択の画像を拡大"><img src="assets/img/story_select.jpg" alt="ミッション選択" loading="lazy" width="1280" height="720"></button>
+<div class="band"><b>ミッション選択</b></div>
+<p>ランクごとのミッションをこなして、昇格試合の挑戦権を手に入れる。</p>
+</article>
+<article class="card">
+<button class="shot" data-full="assets/img/story_talk.jpg" aria-label="会話シーンの画像を拡大"><img src="assets/img/story_talk.jpg" alt="会話シーン" loading="lazy" width="1280" height="720"></button>
+<div class="band"><b>会話シーン</b></div>
+<p>オペレーターのミナや、各ランクのライバルとの掛け合い。</p>
+</article>
+<article class="card">
+<button class="shot" data-full="assets/img/story_rankup.jpg" aria-label="ランクアップの画像を拡大"><img src="assets/img/story_rankup.jpg" alt="ランクアップ" loading="lazy" width="1280" height="720"></button>
+<div class="band"><b>ランクアップ</b></div>
+<p>昇格試合に勝てば、次のランクへ。ライバルの機体も手に入る。</p>
+</article>
+<article class="card">
+<button class="shot" data-full="assets/img/story_duel.jpg" aria-label="昇格試合の画像を拡大"><img src="assets/img/story_duel.jpg" alt="昇格試合" loading="lazy" width="1280" height="720"></button>
+<div class="band"><b>昇格試合</b></div>
+<p>ランクのライバルと&nbsp;1&nbsp;対&nbsp;1&nbsp;の一本勝負。</p>
+</article>
+</div>
+</div>
+
+<header class="sec-head" id="feedback"><span class="no">08</span><span class="ttl"><b>不具合・要望</b><i>FEEDBACK</i></span></header>
+<div class="fb">
+<p>ゲーム内のチャットなどで寄せられた不具合や要望を、開発者がここに一覧でまとめている。直したものは、何を直したかを書いて「対応済み」にする。ゲームへの反映は、次の更新から。</p>
+<div class="fb-links"><a class="btn" href="https://github.com/enyaorc/SteelRoyale-feedback/issues">対応待ちの不具合・要望</a><a class="btn" href="https://github.com/enyaorc/SteelRoyale-feedback/issues?q=is%3Aissue%20state%3Aclosed">対応済みの不具合・要望</a></div>
+</div>
+
+</div>
+</main>
+
+<footer>
+<a class="cta" href="https://unityroom.com/games/steelroyale"><span class="tri"></span><span><b>unityroom で遊ぶ</b><small>無料・インストール不要</small></span></a>
+<p class="note">※ 画像・仕様は開発中のものです。実際の製品とは異なる場合があります。</p>
+<p class="small">サイトと画像の文字：Noto Sans JP（SIL Open Font License&nbsp;1.1）</p>
+</footer>
+
+<div class="lightbox" hidden><button class="close" aria-label="閉じる">×</button><img alt=""></div>
+<script src="assets/site.js"></script>
+</body>
+</html>

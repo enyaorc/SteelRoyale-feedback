@@ -1,0 +1,172 @@
+:root{
+  --bg:#070d18; --navy:#0b1424; --panel:#101c30; --panel2:#16284a; --line:#28466e;
+  --cyan:#4fc3ff; --yellow:#ffd24a; --orange:#f7b22e; --green:#4ade80; --text:#e6edf6; --sub:#9fb0c6;
+  --normal:#9fb0c4; --rare:#4fc3ff; --epic:#ffb040; --legendary:#b840ff;
+  --cut:18px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+@media (max-width:760px){html{scroll-padding-top:104px}}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Noto Sans JP",system-ui,sans-serif;line-height:1.75;font-size:16px;word-break:auto-phrase;
+  background-image:linear-gradient(rgba(79,195,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(79,195,255,.045) 1px,transparent 1px);background-size:40px 40px}
+img{max-width:100%;display:block}
+a{color:var(--cyan)}
+kbd{display:inline-block;min-width:1.9em;padding:0 .45em;margin:0 .12em;border:1px solid var(--line);border-bottom-width:3px;border-radius:5px;background:var(--panel2);color:#fff;font:700 .85em/1.7 "Noto Sans JP",sans-serif;text-align:center}
+
+/* 上のバー */
+.top{position:fixed;inset:0 0 auto 0;z-index:20;display:flex;align-items:center;gap:20px;height:60px;padding:0 20px;
+  background:rgba(7,13,24,.88);backdrop-filter:blur(8px);border-bottom:1px solid rgba(79,195,255,.25)}
+.brand{font-weight:900;letter-spacing:.12em;color:#fff;text-decoration:none;white-space:nowrap}
+.top .links{display:flex;gap:4px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+.top .links::-webkit-scrollbar{display:none}
+.top .links a{color:var(--sub);text-decoration:none;font-size:14px;font-weight:700;padding:6px 10px;white-space:nowrap;border-radius:6px}
+.top .links a:hover{color:#fff;background:rgba(79,195,255,.12)}
+
+/* 遊ぶボタン（タイトル画面のボタンと同じ、角を斜めに切った形） */
+.cta{display:inline-flex;align-items:center;gap:16px;padding:14px 34px 14px 26px;color:#1c160a;text-decoration:none;
+  background:linear-gradient(#ffcf5a,#f2a52a);clip-path:polygon(18px 0,100% 0,100% calc(100% - 18px),calc(100% - 18px) 100%,0 100%,0 18px);
+  filter:drop-shadow(0 6px 14px rgba(247,178,46,.35));transition:transform .15s,filter .15s}
+.cta:hover{transform:translateY(-2px);filter:drop-shadow(0 10px 22px rgba(247,178,46,.5))}
+.cta .tri{width:0;height:0;border-left:22px solid #1c160a;border-top:14px solid transparent;border-bottom:14px solid transparent}
+.cta b{display:block;font-size:26px;font-weight:900;line-height:1.2}
+.cta small{display:block;font-size:13px;font-weight:700;color:#5a4210}
+.cta.small{margin-left:4px;padding:6px 18px;clip-path:polygon(10px 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%,0 10px);font-weight:900;font-size:15px}
+
+/* ヒーロー */
+.hero{position:relative;min-height:min(860px,96vh);padding:110px 0 70px;display:flex;align-items:center;border-bottom:3px solid var(--cyan);
+  background:repeating-linear-gradient(-75deg,transparent 0 22px,rgba(79,195,255,.07) 22px 34px),#0a1222}
+/* 3 枚の絵は右側の箱に収める（箱は画面幅の 52%。ただし幅はヒーローの高さの 0.95 倍まで。広い画面で箱が横長になりすぎると、上下が大きく切られて機体の頭や足が消えるため） */
+.hero-art{position:absolute;top:0;right:0;bottom:0;width:min(52vw,calc(100vw - 600px),calc(min(860px,96vh) * .95));background:url(img/hero_panels.webp) left center/cover no-repeat}
+.hero-in>*{max-width:calc(100vw - min(52vw,calc(100vw - 600px),calc(min(860px,96vh) * .95)) - clamp(20px,5vw,96px) - 24px)}
+.badges{max-width:calc(100vw - min(52vw,calc(100vw - 600px),calc(min(860px,96vh) * .95)) - clamp(20px,5vw,96px) - 24px)}
+.hero-in{position:relative;z-index:1}
+.hero-in{width:100%;padding:0 clamp(20px,5vw,96px)}
+.hero h1{margin:0;width:min(560px,100%)}
+.catch{margin:18px 0 0;font-size:clamp(24px,2.9vw,38px);font-weight:900;color:#fff;text-shadow:0 3px 12px rgba(0,0,0,.8)}
+.lead{margin:6px 0 26px;color:var(--text);text-shadow:0 2px 8px rgba(0,0,0,.9)}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.badges img{height:22px;width:auto}
+.note{margin:14px 0 0;font-size:12px;color:var(--sub)}
+
+/* 本文 */
+main .wrap{max-width:1120px;margin:0 auto;padding:30px 24px 40px}
+.sec-head{position:relative;display:flex;align-items:center;gap:22px;margin:70px 0 26px;padding:14px 26px 14px 44px;
+  background:var(--panel);clip-path:polygon(var(--cut) 0,100% 0,100% calc(100% - var(--cut)),calc(100% - var(--cut)) 100%,0 100%,0 var(--cut));
+  background-image:repeating-linear-gradient(115deg,transparent 0 18px,rgba(79,195,255,.13) 18px 26px);background-size:34% 100%;background-position:right;background-repeat:no-repeat}
+.sec-head::before{content:"";position:absolute;left:14px;top:0;bottom:0;width:10px;background:var(--cyan);transform:skewX(-12deg)}
+.sec-head .no{font-size:40px;font-weight:900;color:var(--cyan);line-height:1}
+.sec-head .ttl{display:flex;flex-direction:column;padding-left:22px;border-left:2px solid var(--line)}
+.sec-head .ttl b{font-size:30px;font-weight:900;color:#fff;line-height:1.25}
+.sec-head .ttl i{font-style:normal;font-size:12px;letter-spacing:.3em;color:var(--cyan)}
+.intro{margin:0 0 22px}
+.after{color:var(--sub);margin:18px 0 0}
+.hint{display:block;color:var(--sub);font-size:14px}
+
+.feats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.feat{background:var(--panel);border-top:3px solid var(--cyan);padding:16px 18px;clip-path:polygon(0 0,100% 0,100% calc(100% - 14px),calc(100% - 14px) 100%,0 100%)}
+.feat b{display:block;font-size:18px;font-weight:900;color:#fff;margin-bottom:4px}
+.feat p{margin:0;color:var(--text);font-size:15px}
+
+.grid{display:grid;gap:18px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.card{background:var(--panel);border:1px solid var(--line);display:flex;flex-direction:column;
+  clip-path:polygon(0 0,100% 0,100% calc(100% - 16px),calc(100% - 16px) 100%,0 100%)}
+.shot{display:block;padding:0;border:0;background:#000;cursor:zoom-in;overflow:hidden}
+.shot img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;transition:transform .35s}
+.shot:hover img{transform:scale(1.04)}
+.band{display:flex;align-items:center;flex-wrap:wrap;gap:8px;padding:10px 16px;background:var(--navy);border-top:3px solid var(--cyan)}
+.band b{font-size:20px;font-weight:900;color:#fff;margin-right:4px}
+.card>p,.card .body>p{margin:0;padding:12px 16px 18px;font-size:15px}
+.card .sub{color:var(--sub);font-size:13px;padding-top:0}
+.tag{display:inline-block;padding:1px 10px;font-size:12px;font-weight:900;color:var(--navy);clip-path:polygon(6px 0,100% 0,100% calc(100% - 6px),calc(100% - 6px) 100%,0 100%,0 6px)}
+.t-single{background:var(--cyan)} .t-multi{background:var(--yellow)} .t-store{background:var(--orange)}
+.card.wide{margin-top:18px;flex-direction:row}
+.card.wide .shot{flex:0 0 52%}
+.card.wide .body{display:flex;flex-direction:column}
+.card.wide .band{border-top:0;border-left:3px solid var(--cyan)}
+
+/* 機体 */
+.legend{display:flex;flex-wrap:wrap;gap:4px 16px;margin-bottom:14px;font-size:13px;font-weight:700;color:var(--sub)}
+.lg{display:inline-flex;align-items:center;gap:6px}
+.lg::before{content:"";width:12px;height:12px;border-radius:2px;background:var(--c)}
+.lg.legendary{--c:var(--legendary)} .lg.epic{--c:var(--epic)} .lg.rare{--c:var(--rare)} .lg.normal{--c:var(--normal)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.chip{font:700 14px "Noto Sans JP",sans-serif;color:var(--sub);background:var(--panel);border:1px solid var(--line);padding:5px 14px;cursor:pointer}
+.chip.on,.chip:hover{color:var(--navy);background:var(--cyan);border-color:var(--cyan)}
+.roster{display:grid;grid-template-columns:repeat(auto-fill,minmax(148px,1fr));gap:12px}
+.mech{position:relative;display:flex;flex-direction:column;align-items:center;padding:8px 8px 12px;background:var(--panel);color:#fff;
+  border:2px solid var(--c);cursor:pointer;font-family:inherit;overflow:hidden;
+  clip-path:polygon(12px 0,100% 0,100% calc(100% - 12px),calc(100% - 12px) 100%,0 100%,0 12px)}
+.mech::before{content:"";position:absolute;inset:10% 15% auto;height:55%;background:radial-gradient(circle,color-mix(in srgb,var(--c) 45%,transparent),transparent 70%)}
+.mech img{position:relative;width:100%;height:auto;aspect-ratio:1}
+.mech>b{position:relative;font-size:16px;font-weight:900;margin-top:2px;border-top:3px solid var(--c);padding-top:4px;width:100%;text-align:center}
+.mech .role{position:relative;font-size:13px;color:#c8d6e8}
+.mech.r-normal{--c:var(--normal)} .mech.r-rare{--c:var(--rare)} .mech.r-epic{--c:var(--epic)} .mech.r-legendary{--c:var(--legendary)}
+.mech .desc{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;gap:4px;padding:12px;background:rgba(7,13,24,.94);
+  font-size:13px;line-height:1.6;text-align:left;opacity:0;transition:opacity .2s;pointer-events:none}
+.mech .desc b{font-size:16px} .mech .desc em{font-style:normal;color:var(--c);font-weight:700;font-size:12px}
+.mech:hover .desc,.mech.open .desc{opacity:1}
+.mech.hide{display:none}
+
+.howto .feat p{line-height:2}
+.fb{background:var(--panel);border:1px solid var(--line);padding:18px 22px}
+.fb p{margin:0 0 10px}
+.fb-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:14px}
+.btn{display:inline-block;padding:8px 20px;font-weight:900;color:var(--navy);background:var(--cyan);text-decoration:none;
+  clip-path:polygon(10px 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%,0 10px)}
+.btn:hover{background:#8fdcff}
+
+footer{text-align:center;padding:50px 20px 60px;border-top:1px solid var(--line);background:var(--navy)}
+footer .small{font-size:12px;color:var(--sub);margin:6px 0 0}
+
+.lightbox{position:fixed;inset:0;z-index:50;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.88);padding:20px;cursor:zoom-out}
+.lightbox[hidden]{display:none}
+.lightbox img{max-width:min(1600px,100%);max-height:100%;width:auto;height:auto;border:2px solid var(--cyan)}
+.lightbox .close{position:absolute;top:12px;right:16px;font-size:32px;line-height:1;color:#fff;background:none;border:0;cursor:pointer}
+
+@media (min-width:1801px){
+  /* 広い画面では、文字の列を内側へ寄せる（真ん中が大きく空かないように）。絵は画面の右の端に付けたまま（右の縁は切り口なので浮かせない） */
+  .hero-in{padding-left:calc((100vw - 1800px) / 2 + 96px)}
+}
+@media (max-width:1279px),(max-aspect-ratio:4/3){
+  /* 絵の箱が狭い幅・縦に長い画面では、3 枚を高さに合わせると右の枠が途中で切れるので、レイドの枠だけを出す。
+     3 枚の絵の縦横比は 0.767。箱の縦横比は、1280px 以上では 0.52vw ÷（ヒーローの高さ ≒ 0.96vh）なので、画面が 4:3 より縦長だと 0.72 を切る */
+  .hero-art{background:url(img/hero_raid.webp) left 44% / 100% auto no-repeat}   /* ロボは絵の高さの 44% の所にいるので、箱の 44% にそろえる */
+}
+@media (max-width:960px){
+  /* 絵の箱が細くなりすぎる幅では、3 枚の絵をやめて、レイドの場面を暗くして文字の後ろに敷く */
+  .hero-art{display:none}
+  .hero{background:linear-gradient(90deg,rgba(7,13,24,.92),rgba(7,13,24,.6)),url(img/hero_mobile.jpg) center/cover no-repeat}
+  .hero-in>*,.badges{max-width:none}
+  .top{gap:12px}
+  .top .links a{font-size:13px;padding:6px 6px}
+}
+@media (max-width:900px){
+  .feats{grid-template-columns:repeat(2,1fr)}
+  .g3{grid-template-columns:repeat(2,1fr)}
+  .card.wide{flex-direction:column} .card.wide .band{border-left:0;border-top:3px solid var(--cyan)}
+}
+@media (max-width:760px){
+  .top{flex-wrap:wrap;height:auto;padding:8px 14px 0;gap:8px 12px}
+  .brand{margin-right:auto}
+  .top .links{order:3;width:100%;margin:0 -14px;padding:0 10px 6px}
+  .top .links a{font-size:13px;padding:4px 8px}
+  .hero{background:linear-gradient(rgba(7,13,24,.35),rgba(7,13,24,.55) 40%,rgba(7,13,24,.88)),url(img/hero_mobile.jpg) center/cover no-repeat;min-height:auto;padding:120px 0 48px}
+  .hero h1{width:min(560px,92%)}
+  .hero-art{display:none}
+  .hero-in>*,.badges{max-width:none}
+  .hero-in{padding:0 20px;text-align:center}
+  .hero h1{margin:0 auto}
+  .badges{justify-content:center}
+  .cta b{font-size:22px}
+  .catch{font-size:24px}
+  .sec-head{margin-top:54px;padding:12px 18px 12px 34px;gap:14px}
+  .sec-head .no{font-size:30px} .sec-head .ttl{padding-left:14px} .sec-head .ttl b{font-size:22px}
+  .g2,.g3,.feats{grid-template-columns:1fr}
+  .roster{grid-template-columns:repeat(3,1fr);gap:8px}
+  .mech{padding:6px 4px 10px}
+  .mech>b{font-size:14px} .mech .role{font-size:12px} .mech .desc{font-size:12px;padding:8px}
+  main .wrap{padding:20px 16px 30px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
