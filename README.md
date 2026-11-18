@@ -11,6 +11,6 @@
 - 不具合の報告と要望の置き場です。issue と公式サイトだけを置いています。
 - ゲーム内のチャットなどで寄せられた不具合や要望を、開発者がここに一覧（issue）でまとめています。
 - 直したものは、何を直したかを書いて「対応済み」にします。ゲームへの反映は、次の更新からです。
-- [対応待ちの不具合・要望](https://github.com/enyaorc/SteelRoyale-feedback/issues)　｜　[対応済みの不具合・要望](https://github.com/enyaorc/SteelRoyale-feedback/issues?q=is%3Aissue%20state%3Aclosed)
+- [対応待ちの不具合・要望](https://github.com/enyaorc/SteelRoyale-feedback/issues)　｜　[対応済みの不具合・要望](https://github.com/enyaorc/SteelRoyale-feedback/issues?q=is%3Aissue%20state%3Aclosed+sort%3Aupdated-desc)
 
 <p align="center"><sub>※ 画像・仕様は開発中のものです。実際の製品とは異なる場合があります。</sub></p>
