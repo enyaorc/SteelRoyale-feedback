@@ -59,6 +59,10 @@ main .wrap{max-width:1120px;margin:0 auto;padding:30px 24px 40px}
 .sec-head .ttl b{font-size:30px;font-weight:900;color:#fff;line-height:1.25}
 .sec-head .ttl i{font-style:normal;font-size:12px;letter-spacing:.3em;color:var(--cyan)}
 .intro{margin:0 0 22px}
+.pv{position:relative;aspect-ratio:16/9;margin:0 0 26px;padding:3px;background:var(--cyan);
+  clip-path:polygon(var(--cut) 0,100% 0,100% calc(100% - var(--cut)),calc(100% - var(--cut)) 100%,0 100%,0 var(--cut))}
+.pv iframe{display:block;width:100%;height:100%;border:0;background:#000;
+  clip-path:polygon(calc(var(--cut) - 1px) 0,100% 0,100% calc(100% - var(--cut) + 1px),calc(100% - var(--cut) + 1px) 100%,0 100%,0 calc(var(--cut) - 1px))}
 .after{color:var(--sub);margin:18px 0 0}
 .hint{display:block;color:var(--sub);font-size:14px}
 
